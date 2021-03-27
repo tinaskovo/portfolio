@@ -6,9 +6,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.portfolio-container {
-}
-
 .landing-page,
 .work,
 .about,
@@ -22,44 +19,73 @@ html {
   height: 100vh;
   width: 100vw;
   box-sizing: border-box;
+  position: relative;
+  text-align: center;
+  h1 {
+    font-family: "Fjalla One", sans-serif;
+    margin: 0;
+  }
+  h2 {
+    font-family: "Barlow Condensed", sans-serif;
+  }
+
+  p {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    margin: 0;
+  }
 }
 
-// .landing-page {
-//   background-color: blue;
-// }
+.profile-image {
+  padding-bottom: 30px;
+  img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
 
-// .work {
-//   background-color: red;
-// }
+.landing-page-text {
+  margin-bottom: 100px;
+}
 
-// .about {
-//   background-color: aqua;
-// }
-
-// .contact {
-//   background-color: blueviolet;
-// }
-
-.section-button {
+.scroll-down {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  // color: white;
-  height: 90px;
+  position: absolute;
+  bottom: 15px;
   text-decoration: none;
-  margin-top: 30px;
-
-  .chevron-down {
-    margin-top: 30px;
-    &:hover {
-      animation: hover-me 0.5s infinite ease-in-out alternate;
-    }
+  &:visited {
+    color: unset;
   }
 }
+
+.chevron-down {
+  height: 90px;
+  width: 40px;
+  text-decoration: none;
+  &:hover {
+    animation: hover-me 0.5s infinite ease-in-out alternate;
+  }
+}
+
 @keyframes hover-me {
   100% {
     transform: translate3d(0, 25px, 0);
+  }
+}
+
+.work {
+  position: relative;
+  h1 {
+    position: absolute;
+    top: 40px;
+  }
+  .chevron-down {
+    height: 60px;
   }
 }
 
@@ -67,57 +93,159 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  // width: 70%;
-  .gallery-image {
-    margin: 15px;
-    cursor: pointer;
-    img {
-      height: 200px;
-      width: 350px;
-      flex: 1 1 33%;
-      object-fit: cover;
+  align-items: center;
+  width: 50%;
+}
+
+.gallery-wrapper {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-image {
+  margin: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 99;
+  &::after {
+    content: "\A";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+  }
+  &:hover:after {
+    opacity: 0.5;
+  }
+
+  img {
+    height: 200px;
+    width: 345px;
+    object-fit: cover;
+  }
+
+  .gallery-button {
+    visibility: hidden;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    border: 2px solid black;
+    outline: none;
+    background-color: rosybrown;
+    padding: 10px 30px;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.2s linear;
+  }
+
+  &:hover {
+    .gallery-button {
+      visibility: visible;
+      opacity: 1;
     }
   }
 }
 
-.modal {
+.modal-overlay {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  // height: 100%;
-  // width: 100%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  overflow: auto;
+  z-index: 999999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
 }
 
 .modal-content {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  max-width: calc(100vw - 2rem);
+  max-height: calc(100vh - 2rem);
+  position: relative;
   img {
     width: 100%;
     height: 100%;
+    padding: 5px 0;
+  }
+
+  h1 {
+    font-family: "Fjalla One", sans-serif;
+    margin: 0;
+  }
+  h2 {
+    font-family: "Barlow Condensed", sans-serif;
+  }
+
+  p {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 300;
+    font-size: 19px;
+    margin: 0;
+    padding-top: 20px;
+    padding-right: 35px;
+    line-height: 35px;
   }
 }
 
-.modal-overlay {
-  z-index: 1;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+.modal-text {
+  padding: 40px;
+  margin-bottom: 5px;
+  background: white;
+  width: 69.2%;
+  align-self: center;
+}
+
+.modal-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .image-wrapper {
+    display: flex;
+    justify-content: center;
+    .medium + .small {
+      width: 18%;
+    }
+
+    .small {
+      width: 38%;
+    }
+
+    .medium {
+      width: 56%;
+      align-self: center;
+      justify-self: center;
+      margin-right: 10px;
+    }
+    .large {
+      width: 74.5%;
+    }
+  }
 }
 
 .modal-close-button {
   position: absolute;
   right: 32px;
-  top: 32px;
+  top: 17px;
   width: 32px;
   height: 32px;
   opacity: 0.7;
+  cursor: pointer;
 }
 .modal-close-button:hover {
   opacity: 1;
@@ -136,4 +264,11 @@ html {
 }
 .modal-close-button:after {
   transform: rotate(-45deg);
+}
+
+.about {
+  p {
+    margin-top: 50px;
+    line-height: 35px;
+  }
 }
