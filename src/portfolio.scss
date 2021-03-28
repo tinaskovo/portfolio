@@ -1,3 +1,4 @@
+//color-pallette: https://coolors.co/deefb7-98dfaf-5fb49c-414288-682d63
 body {
   margin: 0;
 }
@@ -37,6 +38,33 @@ html {
   }
 }
 
+.landing-page {
+  background-color: #086375;
+  background-color: #5fb49c;
+  h1,
+  h2,
+  p {
+    //color: #fc440f;
+    // color: #c60f7b;
+    // color: #f6ae2d;
+    //color: #f26419;
+    //color: #031d44;
+    //color: #04395e;
+    color: #020887;
+  }
+}
+
+.work {
+  background-color: #98dfaf;
+}
+
+.about {
+  background-color: #deefb7;
+}
+.contact {
+  background-color: #ec9192;
+}
+
 .profile-image {
   padding-bottom: 30px;
   img {
@@ -51,7 +79,8 @@ html {
   margin-bottom: 100px;
 }
 
-.scroll-down {
+.scroll-down,
+.top-button {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,7 +92,8 @@ html {
   }
 }
 
-.chevron-down {
+.chevron-down,
+.chevron-up {
   height: 90px;
   width: 40px;
   text-decoration: none;
@@ -270,5 +300,28 @@ html {
   p {
     margin-top: 50px;
     line-height: 35px;
+    text-align: left;
   }
+  .presentation {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+    .profile-image {
+      margin-right: 80px;
+    }
+  }
+}
+.contact {
+  p {
+    margin-top: 15px;
+  }
+  .social-icon {
+    margin-top: 15px;
+    padding: 20px;
+    height: 40px;
+    width: 40px;
+  }
+}
+
+.top-button {
 }
