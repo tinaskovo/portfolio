@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.d9df17b8.chunk.css",
+    "main.js": "/portfolio/static/js/main.43a8ef0d.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.43a8ef0d.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.43d9a0ba.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.43d9a0ba.js.map",
+    "static/js/2.49a2c0cc.chunk.js": "/portfolio/static/js/2.49a2c0cc.chunk.js",
+    "static/js/2.49a2c0cc.chunk.js.map": "/portfolio/static/js/2.49a2c0cc.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/main.d9df17b8.chunk.css.map": "/portfolio/static/css/main.d9df17b8.chunk.css.map",
+    "static/js/2.49a2c0cc.chunk.js.LICENSE.txt": "/portfolio/static/js/2.49a2c0cc.chunk.js.LICENSE.txt",
+    "static/media/chevron-down.07891a72.svg": "/portfolio/static/media/chevron-down.07891a72.svg",
+    "static/media/chevron-up.c1b45183.svg": "/portfolio/static/media/chevron-up.c1b45183.svg",
+    "static/media/github.712f47e9.svg": "/portfolio/static/media/github.712f47e9.svg",
+    "static/media/interacoustics_filter_desktop.de7bcd9a.png": "/portfolio/static/media/interacoustics_filter_desktop.de7bcd9a.png",
+    "static/media/interacoustics_main_desktop.7f3a8f3c.png": "/portfolio/static/media/interacoustics_main_desktop.7f3a8f3c.png",
+    "static/media/interacoustics_main_desktop_gallery.39ff18e2.png": "/portfolio/static/media/interacoustics_main_desktop_gallery.39ff18e2.png",
+    "static/media/interacoustics_search_desktop.b6fffa7f.png": "/portfolio/static/media/interacoustics_search_desktop.b6fffa7f.png",
+    "static/media/interacoustics_search_mobile.c87a6798.png": "/portfolio/static/media/interacoustics_search_mobile.c87a6798.png",
+    "static/media/interacoustics_slider_mobile_1.e53e7f7a.png": "/portfolio/static/media/interacoustics_slider_mobile_1.e53e7f7a.png",
+    "static/media/interacoustics_slider_mobile_2.76e85440.png": "/portfolio/static/media/interacoustics_slider_mobile_2.76e85440.png",
+    "static/media/linkedin.85ce47bf.svg": "/portfolio/static/media/linkedin.85ce47bf.svg",
+    "static/media/medical_full.53ce9932.png": "/portfolio/static/media/medical_full.53ce9932.png",
+    "static/media/medical_home_desktop.11e5919f.PNG": "/portfolio/static/media/medical_home_desktop.11e5919f.PNG",
+    "static/media/medical_menu_mobile.8469b692.png": "/portfolio/static/media/medical_menu_mobile.8469b692.png",
+    "static/media/taskgazelle_1.1ac0671d.png": "/portfolio/static/media/taskgazelle_1.1ac0671d.png",
+    "static/media/taskgazelle_2.0709c60c.png": "/portfolio/static/media/taskgazelle_2.0709c60c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.43d9a0ba.js",
+    "static/js/2.49a2c0cc.chunk.js",
+    "static/css/main.d9df17b8.chunk.css",
+    "static/js/main.43a8ef0d.chunk.js"
+  ]
+}
