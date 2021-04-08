@@ -4,6 +4,7 @@ import { ReactComponent as ChevronDown } from './icons/chevron-down.svg'
 import { ReactComponent as GitHub } from './icons/github.svg'
 import { ReactComponent as Linkedin} from './icons/linkedin.svg'
 import { ReactComponent as ChevronUp } from './icons/chevron-up.svg'
+import { ReactComponent as ChevronRight} from './icons/chevron-right.svg'
 import Modal from './modal.jsx'
 import galleryImages from './data/gallery-images.js'
 
@@ -41,7 +42,7 @@ const Portfolio = () => {
           <h2>I am a Front End Developer based in Copenhagen</h2>
         </div>
         <a href="#work" className="scroll-down">
-          <p>Scroll down to see some of my work</p>
+          <p className="scroll-title">Scroll down to see some of my work</p>
           <ChevronDown className="chevron-down" />
         </a>
       </div>
@@ -59,7 +60,7 @@ const Portfolio = () => {
                       alt="previous work"
                       key={keyCounter++}
                       />
-                    <button className="gallery-button">See more</button>
+                    <ChevronRight className="chevron-right"/>
                   </div>
                 </div>
                 <Modal
@@ -74,7 +75,7 @@ const Portfolio = () => {
 
         </div>
         <a href="#about" className="scroll-down">
-          <p>
+          <p className="scroll-title">
           About
           </p>
           <ChevronDown className="chevron-down" />
@@ -94,7 +95,7 @@ const Portfolio = () => {
           </p>
         </div>
         <a href="#contact" className="scroll-down">
-         <p> Contact</p>
+         <p className="scroll-title"> Contact</p>
           <ChevronDown className="chevron-down" />
         </a>
       </div>
