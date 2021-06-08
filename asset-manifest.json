@@ -1,37 +1,40 @@
 {
   "files": {
-    "main.css": "/static/css/main.a8383830.chunk.css",
-    "main.js": "/static/js/main.898c54e1.chunk.js",
-    "main.js.map": "/static/js/main.898c54e1.chunk.js.map",
+    "main.css": "/static/css/main.32440f5b.chunk.css",
+    "main.js": "/static/js/main.07245527.chunk.js",
+    "main.js.map": "/static/js/main.07245527.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.06b5035f.js",
     "runtime-main.js.map": "/static/js/runtime-main.06b5035f.js.map",
     "static/js/2.49a2c0cc.chunk.js": "/static/js/2.49a2c0cc.chunk.js",
     "static/js/2.49a2c0cc.chunk.js.map": "/static/js/2.49a2c0cc.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.a8383830.chunk.css.map": "/static/css/main.a8383830.chunk.css.map",
+    "static/css/main.32440f5b.chunk.css.map": "/static/css/main.32440f5b.chunk.css.map",
     "static/js/2.49a2c0cc.chunk.js.LICENSE.txt": "/static/js/2.49a2c0cc.chunk.js.LICENSE.txt",
     "static/media/chevron-down.7295c822.svg": "/static/media/chevron-down.7295c822.svg",
     "static/media/chevron-right.49ffbabb.svg": "/static/media/chevron-right.49ffbabb.svg",
     "static/media/chevron-up.61f43fbe.svg": "/static/media/chevron-up.61f43fbe.svg",
+    "static/media/delivery_portal.cfc10356.png": "/static/media/delivery_portal.cfc10356.png",
+    "static/media/delivery_portal_1.a47409f2.png": "/static/media/delivery_portal_1.a47409f2.png",
+    "static/media/demant.1e0bbaac.png": "/static/media/demant.1e0bbaac.png",
+    "static/media/depo_logo.26d6c933.png": "/static/media/depo_logo.26d6c933.png",
     "static/media/github.cdcc88f7.svg": "/static/media/github.cdcc88f7.svg",
     "static/media/interacoustics_filter_desktop.de7bcd9a.png": "/static/media/interacoustics_filter_desktop.de7bcd9a.png",
-    "static/media/interacoustics_main_desktop.7f3a8f3c.png": "/static/media/interacoustics_main_desktop.7f3a8f3c.png",
-    "static/media/interacoustics_main_desktop_gallery.39ff18e2.png": "/static/media/interacoustics_main_desktop_gallery.39ff18e2.png",
     "static/media/interacoustics_search_desktop.b6fffa7f.png": "/static/media/interacoustics_search_desktop.b6fffa7f.png",
     "static/media/interacoustics_search_mobile.c87a6798.png": "/static/media/interacoustics_search_mobile.c87a6798.png",
     "static/media/interacoustics_slider_mobile_1.e53e7f7a.png": "/static/media/interacoustics_slider_mobile_1.e53e7f7a.png",
     "static/media/interacoustics_slider_mobile_2.76e85440.png": "/static/media/interacoustics_slider_mobile_2.76e85440.png",
     "static/media/linkedin.64592e01.svg": "/static/media/linkedin.64592e01.svg",
     "static/media/medical_full.53ce9932.png": "/static/media/medical_full.53ce9932.png",
-    "static/media/medical_home_desktop.11e5919f.PNG": "/static/media/medical_home_desktop.11e5919f.PNG",
     "static/media/medical_menu_mobile.8469b692.png": "/static/media/medical_menu_mobile.8469b692.png",
-    "static/media/taskgazelle_1.1ac0671d.png": "/static/media/taskgazelle_1.1ac0671d.png",
-    "static/media/taskgazelle_2.0709c60c.png": "/static/media/taskgazelle_2.0709c60c.png"
+    "static/media/prodition.14f2e70d.png": "/static/media/prodition.14f2e70d.png",
+    "static/media/shd_1.22db1400.png": "/static/media/shd_1.22db1400.png",
+    "static/media/shd_2.5ab61299.png": "/static/media/shd_2.5ab61299.png",
+    "static/media/shd_logo.d278f8af.PNG": "/static/media/shd_logo.d278f8af.PNG"
   },
   "entrypoints": [
     "static/js/runtime-main.06b5035f.js",
     "static/js/2.49a2c0cc.chunk.js",
-    "static/css/main.a8383830.chunk.css",
-    "static/js/main.898c54e1.chunk.js"
+    "static/css/main.32440f5b.chunk.css",
+    "static/js/main.07245527.chunk.js"
   ]
 }
