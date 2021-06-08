@@ -1,0 +1,79 @@
+@import "responsive";
+
+// CONTAINER WIDTH
+$container-full-width: 100%;
+$container-full-max-width: 1600px;
+$container-regular-width: 50%;
+$container-regular-max-width: 1410px;
+$container-small-max-width: 900px;
+$container-large-max-width: 875px;
+$container-slim-width: 47.2%;
+$container-slim-max-width: 660px;
+// MARGINS
+$margin-mobile-size: 40px;
+$margin-desktop-size: 60px;
+// PADDING
+$padding-mobile-size: 20px;
+$padding-desktop-size: 30px;
+// SIZES
+// Z-INDECES
+@mixin reset-container() {
+  position: static;
+  width: auto;
+  max-width: none;
+  margin: 0;
+}
+@mixin containerWidth($width, $max-width) {
+  width: $width;
+  max-width: $max-width;
+}
+@mixin container($default: regular) {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  @if ($default == full-width) {
+    @include containerWidth($container-full-width, $container-full-max-width);
+  } @else if($default == regular) {
+    @include containerWidth(
+      $container-regular-width,
+      $container-regular-max-width
+    );
+  } @else if($default == slim) {
+    @include containerWidth($container-slim-width, $container-slim-max-width);
+  }
+
+  &.full-width {
+    @include containerWidth($container-full-width, $container-full-max-width);
+  }
+
+  &.regular {
+    @include containerWidth(
+      $container-regular-width,
+      $container-regular-max-width
+    );
+  }
+
+  &.slim {
+    @include containerWidth($container-slim-width, $container-slim-max-width);
+  }
+}
+
+@mixin layout {
+  $text-elements: p, ol, ul, h1, h2, h3, h4, h5;
+  @each $text-element in $text-elements {
+    @each $sub-text-element in $text-elements {
+      #{$text-element} + #{$sub-text-element} {
+        margin-top: 1em;
+      }
+    }
+  }
+
+  .content .component {
+    padding: 1rem 0;
+  }
+}
+@mixin sitecore-editor-height($component-selector, $min-height: 60px) {
+  body.on-page-editor .component#{$component-selector} {
+    min-height: $min-height;
+  }
+}

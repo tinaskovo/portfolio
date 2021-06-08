@@ -1,0 +1,15 @@
+.landing-page {
+  .profile-image {
+    padding-bottom: 30px;
+    img {
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+
+  .landing-page-text {
+    margin-bottom: 100px;
+  }
+}

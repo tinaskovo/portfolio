@@ -1,0 +1,56 @@
+$font-color-primary: #020887;
+$font-color-secondary: #d14081;
+$landing-page-color: #5fb49c;
+$work-page-color: #98dfaf;
+$about-page-color: #deefb7;
+$contact-page-color: #ec9192;
+
+h1,
+h2,
+p {
+  color: $font-color-primary;
+}
+
+.landing-page {
+  background-color: $landing-page-color;
+}
+
+.work {
+  background-color: $work-page-color;
+}
+
+.about {
+  background-color: $about-page-color;
+}
+.contact {
+  background-color: $contact-page-color;
+}
+
+.scroll-down,
+.scroll-up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  text-decoration: none;
+  &:visited {
+    color: unset;
+  }
+}
+
+.chevron-down,
+.chevron-up {
+  height: 90px;
+  width: 40px;
+  text-decoration: none;
+  &:hover {
+    animation: hover-me 0.5s infinite ease-in-out alternate;
+  }
+}
+
+@keyframes hover-me {
+  100% {
+    transform: translate3d(0, 25px, 0);
+  }
+}

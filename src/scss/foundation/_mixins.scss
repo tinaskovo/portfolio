@@ -1,0 +1,10 @@
+@mixin headline-top-chevron-bottom {
+  position: relative;
+  h1 {
+    position: absolute;
+    top: 25px;
+  }
+  .chevron-down {
+    height: 60px;
+  }
+}
